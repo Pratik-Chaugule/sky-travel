@@ -41,12 +41,30 @@ document.addEventListener("DOMContentLoaded", () => {
         body: new FormData(form)
       })
       .then(response => {
-        alert("✅ Thank you! Your message has been sent.");
+        // ✅ Success Toast
+        Toastify({
+          text: "✅ Thank you! Your message has been sent.",
+          duration: 4000,
+          gravity: "top",
+          position: "right",
+          backgroundColor: "#28a745",
+          stopOnFocus: true,
+        }).showToast();
+
         form.reset();
       })
       .catch(error => {
         console.error('Error!', error.message);
-        alert("❌ Sorry, something went wrong.");
+
+        // ❌ Error Toast
+        Toastify({
+          text: "❌ Sorry, something went wrong.",
+          duration: 4000,
+          gravity: "top",
+          position: "right",
+          backgroundColor: "#dc3545",
+          stopOnFocus: true,
+        }).showToast();
       })
       .finally(() => {
         // Hide loader after fetch completes
@@ -58,5 +76,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
-
-
