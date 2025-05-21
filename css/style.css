@@ -131,17 +131,18 @@ header {
 
 /* Hero Section */
 .hero {
-  background: url('../images/hero.jpg') no-repeat center center/cover;
+  background: url('../images/Picture1.png') no-repeat center center/cover;
   height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: white;
+  color: rgb(24, 21, 21);
 }
 
 .hero-content {
-  background: rgba(0, 0, 0, 0.6);
+  margin-top: 50px;
+  background: rgba(177, 196, 201, 0.623);
   padding: 40px;
   border-radius: 10px;
 }
@@ -157,7 +158,7 @@ header {
 
 .btn-primary {
   background: #ffcc00;
-  color: #003366;
+  color: black;
   padding: 12px 24px;
   text-decoration: none;
   font-weight: bold;
@@ -389,9 +390,9 @@ header {
   display: block;
   width: 80px;
   height: 4px;
-  background-color: #ffcc00;
   margin: 10px auto 20px;
   border-radius: 2px;
+  background-color: #002244;
 }
 
 .about p {
@@ -453,7 +454,7 @@ header {
   display: block;
   width: 80px;
   height: 4px;
-  background-color: #ffcc00;
+  background-color: #002244;
   margin: 10px auto 0;
   border-radius: 2px;
 }
@@ -529,8 +530,18 @@ header {
 
 .packages h1 {
   font-size: 2.5rem;
-  color: var(--primary);
+  color: #002244;
   margin-bottom: 40px;
+}
+
+.packages h1::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin: 10px auto 20px;
+  border-radius: 2px;
+  background-color: #002244;
 }
 
 .packages-grid {
@@ -603,7 +614,7 @@ header {
 .contact h1 {
   font-size: 36px;
   margin-bottom: 10px;
-  color: #0077b6;
+  color: #002244;
 }
 
 .contact h1::after {
@@ -611,7 +622,7 @@ header {
   display: block;
   width: 70px;
   height: 4px;
-  background-color: #ffcc00;
+  background-color: #002244;
   margin: 10px auto 0;
   border-radius: 2px;
 }
@@ -653,7 +664,7 @@ header {
 
 .contact-form button {
   padding: 12px;
-  background-color: #0077b6;
+  background-color: #002244;
   color: white;
   border: none;
   font-size: 16px;
@@ -663,13 +674,20 @@ header {
 }
 
 .contact-form button:hover {
-  background-color: #00b4d8;
+  background-color: #002244;
 }
 
-.contact-info h3 {
+.contact-info .office-info {
   margin-bottom: 15px;
-  color: #0077b6;
+  color: #002244;
 }
+
+.contact-info .follow-us {
+  margin-bottom: 15px;
+  color: #002244;
+  margin-top: 50px;
+}
+
 
 .contact-info {
   flex: 1 1 300px;
@@ -680,20 +698,20 @@ header {
 }
 
 .contact-info p {
-  margin: 10px 0;
+  margin: 10px 0px;
   font-size: 16px;
   color: #444;
 } 
 
 .contact-info i {
   margin-right: 1px;
-  color: #0077b6;
+  color: #002244;
 }
 
 .social-links {
   display: flex;
   gap: 10px;
-  margin-top: 10px;
+  margin-top: 1px;
 }
 
 .social-links a {
@@ -715,14 +733,14 @@ header {
   display: inline-block;
   margin-top: 10px;
   color: #fff;
-  background-color: #007BFF;
+  background-color: #03316d;
   padding: 8px 15px;
   text-decoration: none;
   border-radius: 5px;
   transition: background 0.3s ease;
 }
 .read-more-btn:hover {
-  background-color: #0056b3;
+  background-color: #000c18;
 }
 
 /* Service Details Page Styling */
@@ -995,4 +1013,3 @@ header {
   z-index: 9999;
   transition: 0.3s ease;
 }
-
