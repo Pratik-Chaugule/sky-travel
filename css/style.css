@@ -116,7 +116,7 @@ header {
   .menu-toggle {
     display: block;
     z-index: 1000;
-    color: #fff;
+    color: black;
   }
 }
 
