@@ -633,6 +633,12 @@ header {
   background-color: var(--accent);
 }
 
+@media (max-width: 768px) {
+  .packages h1 {
+  font-size: 2.1rem;
+}
+}
+
 /* Contact Section */
 
 
